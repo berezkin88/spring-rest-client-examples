@@ -10,10 +10,15 @@ import java.util.List;
  * @author Aleksandr Beryozkin
  */
 
-@Getter
-@Setter
-@NoArgsConstructor
 public class UserData {
 
     private List<User> data;
+
+    public List<User> getData() {
+        return data;
+    }
+
+    public void setData(List<User> data) {
+        this.data = data;
+    }
 }

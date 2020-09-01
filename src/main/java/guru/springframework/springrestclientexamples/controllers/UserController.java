@@ -2,6 +2,8 @@ package guru.springframework.springrestclientexamples.controllers;
 
 import guru.springframework.springrestclientexamples.services.ApiService;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.MultiValueMap;
@@ -12,9 +14,10 @@ import org.springframework.web.server.ServerWebExchange;
 /**
  * @author Aleksandr Beryozkin
  */
-@Slf4j
 @Controller
 public class UserController {
+
+    private static final Logger log = LoggerFactory.getLogger(UserController.class);
 
     private ApiService apiService;
 
